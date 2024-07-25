@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Beakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="prompt" id="initialPrompt">Notice the water level and now drag and drop the balls inside the beaker.</div>
+    <div class="container">
+        <div class="scale">
+            <div style="top: 0;">100</div>
+            <div style="top: 25%;">75</div>
+            <div style="top: 50%;">50</div>
+            <div style="top: 75%;">25</div>
+            <div style="top: 100%;">0</div>
+        </div>
+        <div class="beaker" id="beaker1">
+            <div class="title">Absorbing Material</div>
+            <div class="water" id="water1" style="height: 50%;"></div>
+            <div class="dotted-line" style="top: 50%;"></div>
+            <div class="ball absorb" id="ball1" draggable="true" style="top: -40px; left: 35px;"></div>
+            <div class="instruction" id="instruction1">Tap the ball</div>
+        </div>
+        <div class="beaker" id="beaker2">
+            <div class="title">Non-Absorbing Material</div>
+            <div class="water" id="water2" style="height: 50%;"></div>
+            <div class="dotted-line" style="top: 50%;"></div>
+            <div class="ball non-absorb" id="ball2" draggable="true" style="top: -40px; left: 35px;"></div>
+            <div class="instruction" id="instruction2">Tap the ball</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
